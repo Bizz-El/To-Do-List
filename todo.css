@@ -1,0 +1,214 @@
+body {
+  background: #fff;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+.container {
+  display: block;
+  width: 65vw;
+  margin: 1vh 0vw 0vh 32vw;
+ /* position: fixed;
+  top: 1vh;
+  left: 32vw;
+  width: 65vw;
+  height: 95vh;
+  border: 4px solid green;*/
+}
+h3 {
+  border-bottom: 2px solid #333;
+  color: #333;
+  font-weight: 700;
+  font-size: 3vh;
+  /*padding: 30px 0 10px;*/
+  margin: 1vh;
+  text-transform: uppercase;
+  text-align: center;
+  overflow-x: hidden;
+}
+/* Completed */
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+ul div textarea {
+  display:none;
+}
+
+ul div.editMode textarea {
+  display:block;
+}
+
+ul div.editMode label {
+  display:none;
+}
+
+.add_button, .sort_button, .delete_all_task {
+  display: block;
+  clear: both;
+  margin: 0 3vw 0 3vw;
+  width: 24vw;
+
+}
+
+.edit {
+  display: block;
+  clear: both;
+  width: 58.20vw;
+  /*margin: 0.3vh;*/
+
+}
+
+.add_menu {
+    position: fixed;
+    top: 0vh;
+    left: 0vw;
+    width: 30vw;
+    height: 95vh;
+    border: 4px solid green;
+}
+
+/*.task_list {
+    position: fixed;
+    top: 1vh;
+    left: 32vw;
+    width: 65vw;
+    height: 95vh;
+    border: 4px solid green;
+}*/
+
+textarea#new-task, textarea#header-task {
+  float: left;
+  width: 28.65vw;
+  max-width: 28.65vw;
+  margin: 1vh;
+  max-height: 27vh;
+  height: 5vh;
+  /*margin: 1vh;*/
+}
+
+button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+    height: 4vh;
+    cursor: pointer;
+    font-size: 2vh;
+    overflow-x: hidden; 
+    margin: 0.1vw;
+}
+
+label[for='new-task'], label[for='header-task'] {
+  float: left;
+  margin: 0 1vw 0 1vw;
+  width: 28vw;
+  font-weight: 700;
+}
+
+.listItem {
+    /*overflow: hidden;*/
+    padding: 1vh;
+    border-bottom: 4px solid #08b3c3;
+}
+
+
+.add_button_hover:hover,.sort_button_hover:hover, .delete:hover, .edit:hover, .deselect:hover, .delete_all_task_hover:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.delete:hover {
+  background-color: DarkRed !important;
+}
+
+.disable_add_button, .disable_sort_button, .disable_delete_all_task {
+  pointer-events: none;
+  /*opacity: 0.4;*/
+  background-color: DarkRed !important;
+  color: white!important;
+}
+
+textarea {
+  /*margin: 1vh;*/
+  font-size: 4vh;
+  /*line-height: 1vh;*/
+  height: 5vh;
+  /*padding: 10px;*/
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+
+.editInput {
+    width: 61.29vw;
+    max-width: 61.29vw;
+}
+
+.label_description {
+    position: relative;
+    /* left: 0.7vw; */
+    /* right: 0.7vw; */
+    font-size: 2vh;
+    width: 50.4vw;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+.label_header {
+  display: block; */
+    /* clear: both; */
+    margin: 0.3vh;
+    width: 58.20vw;
+    /* max-width: 61.5vw; */
+    font-weight: 700;
+    float: left;
+    /* height: 4.4vh; */
+    font-size: 3vh;
+    text-align: center;
+    padding-bottom: 1vh;
+    /* display: list-item; */
+    /* text-align: -webkit-match-parent; */
+    word-wrap: break-word;
+    overflow-x: hidden;
+}
+
+.deselect, .delete {
+  width: 29.05vw;
+  /*margin: 0.3vw;*/
+}
+
+.deselect {
+  word-wrap: normal;
+  overflow-x:hidden
+}
+
+.label_header_description {
+      /* float: left; */
+    position: relative;
+    /* display: inline-block; */
+    /*left: 0.4vw;*/
+    font-size: 2vh;
+    width: 10vw;
+    font-weight: 700;
+    /* margin: 0.3vh; */
+}
+
+.edit_description {
+    background-color: #008CBA !important;
+    color: white !important;
+}
+
+.incompleted_all_button {
+  background-color: grey !important;
+  color: white !important;
+}
+
+.incompleted_all_button:hover {
+  background-color: green !important;
+}
