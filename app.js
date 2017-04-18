@@ -401,7 +401,7 @@ $(document).ready(function(){
     $('.add_button').removeClass("add_button_hover");
     $('.add_button').addClass("disable_add_button");
     $('#header-task').keyup(function(){
-        if($(this).val().length !=0) {
+        if(($(this).val().length !=0)&&($(this).val().replace(/\s/g, '') !== "")) {
             $('.add_button').attr('disabled', false);  
             $('.add_button').addClass("add_button_hover");
             $('.add_button').removeClass("disable_add_button");
